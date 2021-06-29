@@ -1,0 +1,16 @@
+club_details--->club_id, club_name, club_email, club_password, mission, club_phone, website, founded, profile_picture, cover_picture, login_status
+
+club_members--->club_id, student_id, student_name, student_profile_picture, club_name, club_profile_picture, club_mission, status
+
+membership_requests--->club_id, student_id, student_profile_picture, student_name, request_type
+
+post--->post_id,club_id, post_image, content, time
+
+post_comments---> id, post_id, comment_id, comment_content, name, profile_picture, time
+
+post_like---> id, post_id, position
+
+students--->id, firstname, lastname, student_id, student_email, student_password, department, batch, gender, student_phone, profile_picture, login_status
+
+
+chats--->message_id, sender_id, receiver_id, message_content, message_status, message_date
