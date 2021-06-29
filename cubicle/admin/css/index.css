@@ -1,0 +1,250 @@
+body {
+    font-family: "Muli-Regular";
+    color: #666;
+    font-size: 13px;
+    margin: 0; 
+}
+  
+.topnav {
+    overflow: hidden;
+    background-color: #5D5B6A;
+    padding:10px
+}
+
+.topnav a {
+      float: left;
+      display: block;
+      text-align: center;
+      text-decoration: none;
+      font-size: 60px;
+      width: 400px;
+      color:white
+
+      
+}
+      
+.topnav .login-container {
+      float: right;
+}
+      
+.topnav #pass, #email {
+      padding: 12px;
+      margin-top: 8px;
+      font-size: 15px;
+      border: none;
+      width:250px;
+      border-radius: 5px;
+}
+      
+.topnav .login-container button {
+        float: right;
+        padding: 12px;
+        margin-top: 8px;
+        margin-right: 16px;
+        margin-left: 10px;
+        background-color: #555;
+        color: white;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        border-radius: 10px;
+}
+      
+.topnav .login-container button:hover {
+        background-color: green;
+}
+.container {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: 55% 45%;
+        
+}
+.container::after {
+        content:"";
+        clear: both;
+        display: table;
+        margin-top: 10px;
+}   
+.signup_form {
+        background-color: #5D5B6A;
+        padding: 20px;
+        border-radius: 5px;
+        margin: 10px;
+}
+
+.signup_form h3 {
+        text-align: center;
+}
+
+.container-content .main-theme{
+        color: black;
+        width: 600px;
+        border: 1px solid black;
+        text-align: center;
+        padding: 15px;
+        margin-left: 10px;
+        word-spacing: 2px;
+        line-height: 20px;
+
+}
+
+.container-content h3{
+        text-align: center;
+        color: black;
+        font-size: 22px;
+}
+.container-content .features {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-left: 10px;
+}
+
+.container-content .features p {
+        border: 1px solid black;
+        margin-right: 20px;
+        padding: 10px;
+        color: black;
+        font-size: 12px;
+}
+.singal-item-email, .singal-item-phone, .singal-item-website, .singal-item-founded, .singal-item-mission, .singal-item-name{
+        margin-top: 10px;
+       
+}
+.singal-item-email input, .singal-item-phone input, .singal-item-website input, .singal-item-founded input, .singal-item-mission textarea, .singal-item-name input{
+        display: block;
+        width: 94%;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+       
+}
+
+.group-item-password input{
+        width: 45%;
+        margin-top: 10px;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+}
+.group-item-department {
+        display: flex;
+        flex-direction: column;
+        margin-top: 5px;
+}
+.group-item-department select{
+        padding:10px;
+        background-color: white;
+        border: none;
+        border-radius: 5px;
+}
+
+.group-item-department label {
+        margin-bottom: 5px;
+        font-size: 15px;
+        color: black;
+}
+
+.group-item-gender {
+        margin-top: 10px;
+}
+
+.group-item-gender label {
+        color: black;
+        font-size: 14px;
+}
+
+.group-item-btn input[type ="submit"] {
+        background-color: #555;
+        margin-top: 20px;
+        padding: 15px;
+        text-align: center;
+        width: 40%;
+        border-radius: 5px;
+        font-size: 18px;
+        cursor: pointer;
+        background-color: #555;
+        color: white;
+        border: none;  
+
+}
+
+.group-item-btn input[type ="submit"]:hover {
+        background-color: green;
+}
+
+footer {
+    background-color: #5D5B6A; ;
+    padding: 3px;
+    text-align: center;
+    color:  white;
+    font-size: 18px;
+   
+}
+
+@media only screen and (max-width: 1150px) {
+        .topnav {
+            display: grid; 
+            grid-template-columns: auto;   
+        }
+        .topnav a{
+             width: 100%;
+             text-align: center;
+             color: black;
+        }
+        .topnav .login-container {
+                float: none;
+                text-align: center;
+        }
+
+        .topnav .login-container button {
+                float: none;
+               
+        }
+        .container {
+                display: block;
+        }
+        .container-content .main-theme  {
+                display: block;
+                text-align: center;
+                width: 90%;
+        }
+
+        .group-item-password input {
+                width: 90%;
+        }
+
+        .singal-item-email input, .singal-item-phone input, .singal-item-website input, .singal-item-founded input, .singal-item-mission textarea, .singal-item-name input{
+                width: 90%;
+        }
+
+        .group-item-btn input[type='submit']{
+                width: 25%;
+                padding: 13px;
+        }
+}
+  
+@media only screen and (max-width: 585px) {
+        .topnav .login-container {
+                text-align: center;
+                display: block;
+                width: 100%;
+                
+        }
+
+        .topnav #pass, #email, button {
+                width: 400px;
+        }
+
+       .group-item-password input {
+                width: 90%;
+        }
+
+        .singal-item-email input, .singal-item-phone input, .singal-item-website input, .singal-item-founded input, .singal-item-mission textarea, .singal-item-name input {
+                width: 90%;
+        }
+
+        .group-item-btn input[type='submit']{
+                width: 35%;
+                padding: 13px;
+        }
+}
